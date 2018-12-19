@@ -22,6 +22,9 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		A5F458EC21C9EFE900F803F7 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = A5F458E821C9EFE900F803F7 /* .gitkeep */; };
+		A5F458EE21C9EFE900F803F7 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = A5F458EB21C9EFE900F803F7 /* .gitkeep */; };
+		A5F458F121C9F00800F803F7 /* YWTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F458F021C9F00800F803F7 /* YWTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +58,14 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7BED38A209217D544116E8F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7BED38A209217D544116E8F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AE5E474ED8826615BDB867E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FB71A74193C9F0911C3ADC15 /* LMUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LMUI.podspec; path = ../LMUI.podspec; sourceTree = "<group>"; };
+		A5F458E821C9EFE900F803F7 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A5F458EB21C9EFE900F803F7 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A5F458EF21C9F00800F803F7 /* YWTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YWTest.h; sourceTree = "<group>"; };
+		A5F458F021C9F00800F803F7 /* YWTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YWTest.m; sourceTree = "<group>"; };
+		AE5E474ED8826615BDB867E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FB71A74193C9F0911C3ADC15 /* LMUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LMUI.podspec; path = ../LMUI.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,11 +172,40 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				A5F458E621C9EFE900F803F7 /* LMUI */,
 				FB71A74193C9F0911C3ADC15 /* LMUI.podspec */,
 				AE5E474ED8826615BDB867E4 /* README.md */,
 				7BED38A209217D544116E8F4 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		A5F458E621C9EFE900F803F7 /* LMUI */ = {
+			isa = PBXGroup;
+			children = (
+				A5F458E721C9EFE900F803F7 /* Classes */,
+				A5F458EA21C9EFE900F803F7 /* Assets */,
+			);
+			name = LMUI;
+			path = ../LMUI;
+			sourceTree = "<group>";
+		};
+		A5F458E721C9EFE900F803F7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A5F458E821C9EFE900F803F7 /* .gitkeep */,
+				A5F458EF21C9F00800F803F7 /* YWTest.h */,
+				A5F458F021C9F00800F803F7 /* YWTest.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A5F458EA21C9EFE900F803F7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A5F458EB21C9EFE900F803F7 /* .gitkeep */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +261,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "LMUI" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -251,6 +287,8 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				A5F458EC21C9EFE900F803F7 /* .gitkeep in Resources */,
+				A5F458EE21C9EFE900F803F7 /* .gitkeep in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -274,6 +312,7 @@
 				6003F59E195388D20070C39A /* YWAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* YWViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				A5F458F121C9F00800F803F7 /* YWTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +508,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "LMUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,
